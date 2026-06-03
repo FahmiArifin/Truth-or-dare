@@ -1,6 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="Truth or Dare Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
 
 # 🃏 Welcome to Truth or Dare App!
 
@@ -8,7 +5,7 @@ Welcome to the official repository of the **Truth or Dare App**—an interactive
 
 This application is fully optimized with smart play-mode filtering (Online vs. Offline), dual-style text localization (Standard Formal vs. Trendy Gen-Z slang), and comprehensive screen-reader accessibility (`aria-live`, built-in Text-to-Speech, and reduced motion support). It also includes a powerful Admin Dashboard integrated with the Google Gemini API for automated, instant question generation.
 
-🔗 **View the app live in Google AI Studio:** [AI Studio App Link](https://ai.studio/apps/25241491-081c-41cd-9d48-e170b0463680)
+
 
 ---
 

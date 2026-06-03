@@ -1,0 +1,6 @@
+{
+  "name": "Truth or Dare",
+  "description": "Permainan Truth or Dare interaktif dan seru dengan fitur aksesibilitas WCAG, kategori hubungan kustom, dan dukungan penyesuaian kartu pertanyaan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

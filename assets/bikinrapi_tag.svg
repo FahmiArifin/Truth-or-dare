@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Dark Brushed Obsidian Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02040a" />
+      <stop offset="40%" stop-color="#050814" />
+      <stop offset="100%" stop-color="#0b031c" />
+    </linearGradient>
+
+    <!-- Obsidian Brushed Pattern -->
+    <pattern id="brushedText" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 10 L 40 10 M 0 30 L 40 30" stroke="#101830" stroke-width="0.5" opacity="0.15" />
+      <path d="M 10 0 L 10 40 M 30 0 L 30 40" stroke="#101830" stroke-width="0.5" opacity="0.1" />
+    </pattern>
+
+    <!-- Tech Circuit Cyberpunk Grid Pattern -->
+    <pattern id="cyberGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.04" />
+      <circle cx="0" cy="0" r="1.5" fill="#22d3ee" opacity="0.2" />
+    </pattern>
+
+    <!-- Electric Cyan Glowing Tube Gradient -->
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Halo Glowing Filter for Cyberpunk Neon -->
+    <filter id="neonGlow1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="20" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowSubtle" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Deep Ambient Glow backdrop -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#02040a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Dark Saturated Premium Background with Gradients and Patterns -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#brushedText)" />
+  <rect width="800" height="450" fill="url(#centerGlow)" />
+  <rect width="800" height="450" fill="url(#cyberGrid)" />
+
+  <!-- Abstract Tech Line Accents / Glowing Digital Signature Elements -->
+  <g opacity="0.2" filter="url(#neonGlowSubtle)">
+    <path d="M 50 50 L 150 50 M 50 50 L 50 150" fill="none" stroke="#22d3ee" stroke-width="1" />
+    <path d="M 750 400 L 650 400 M 750 400 L 750 300" fill="none" stroke="#d946ef" stroke-width="1" />
+    <!-- Cyber circuit line in background -->
+    <path d="M 300 350 L 500 350 M 500 350 L 550 400" fill="none" stroke="#8b5cf6" stroke-width="1" />
+    <circle cx="550" cy="400" r="3" fill="#8b5cf6" />
+    <path d="M 500 100 L 400 100 M 400 100 L 350 50" fill="none" stroke="#06b6d4" stroke-width="1" />
+    <circle cx="350" cy="50" r="3" fill="#06b6d4" />
+  </g>
+
+  <!-- Ambient Light Orbs (Cyan & Violet) -->
+  <circle cx="250" cy="225" r="150" fill="#06b6d4" opacity="0.08" filter="blur(40px)" />
+  <circle cx="550" cy="225" r="150" fill="#a855f7" opacity="0.08" filter="blur(40px)" />
+
+  <!-- 2. Typography Group centered in the canvas -->
+  <g transform="translate(400, 225)">
+    <!-- Sub-text: "created by" - Smaller, thinner, stylish spacing -->
+    <text
+      y="-40"
+      font-family="'Playfair Display', 'Space Grotesk', 'Inter', sans-serif"
+      font-size="20"
+      font-weight="300"
+      letter-spacing="12"
+      fill="#a5b4fc"
+      text-anchor="middle"
+      opacity="0.85"
+      filter="url(#neonGlowSubtle)"
+    >
+      created by
+    </text>
+
+    <!-- Main Text: "BikinRapi" - Bolder, geometric, glowing effect -->
+    <g filter="url(#neonGlow1)">
+      <!-- Drop Shadow Outer Layer -->
+      <text
+        y="30"
+        font-family="'Space Grotesk', 'Outfit', 'Inter', sans-serif"
+        font-size="64"
+        font-weight="800"
+        letter-spacing="4"
+        fill="none"
+        stroke="#8b5cf6"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        text-anchor="middle"
+        opacity="0.7"
+      >
+        BikinRapi
+      </text>
+      <!-- Core Vivid Glowing Text Layer -->
+      <text
+        y="30"
+        font-family="'Space Grotesk', 'Outfit', 'Inter', sans-serif"
+        font-size="64"
+        font-weight="800"
+        letter-spacing="4"
+        fill="url(#cyanNeon)"
+        text-anchor="middle"
+      >
+        BikinRapi
+      </text>
+    </g>
+
+    <!-- Extra Sleek Architectural Line under the brand name -->
+    <line
+      x1="-140"
+      y1="65"
+      x2="140"
+      y2="65"
+      stroke="url(#cyanNeon)"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity="0.9"
+      filter="url(#neonGlowSubtle)"
+    />
+    
+    <!-- Little holographic corner brackets / frame details -->
+    <path d="M -180 -10 L -180 -60 L -130 -60" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.6" filter="url(#neonGlowSubtle)" />
+    <path d="M 180 10 L 180 60 L 130 60" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6" filter="url(#neonGlowSubtle)" />
+  </g>
+</svg>
